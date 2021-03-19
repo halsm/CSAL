@@ -96,11 +96,11 @@ function CreateCourseLoginForTeacher(TheOriginalList,RemoveList,TeacherEmail,Tea
 	var TheIndex=Math.random()*TheOriginalList.length;
 	var randomindex=Math.floor(TheIndex);
 	var html="";
-	html=html+"Welcome to Adult Reading Comprehension (ARC) website! <br/> You have been approved to be a teacher. <br/>We have created a class for you. ";
-	html=html+"<br/>Please use the following login information to login:<ul>";
+	html=html+"Hello, <br/>Welcome to AutoTutor for Adult Reading Comprehension. If you would like to be a teacher in our system, please fill in the information below. We will create a class for you with preregistered students. <br/><br>";
+	html=html+"<br/>Please use the following login information to login; we will also be sending you this information in a confirmation email. Please save this information:<ul>";
 	html=html+"<li>Login: <b>"+TheOriginalList[randomindex][1]+"</b>";
 	html=html+"<li>password: <b>"+TheOriginalList[randomindex][2]+"</b>";
-	html=html+"<li>Instruction to teacher: <a href='"+TheOriginalList[randomindex][3]+"' target='new'></a><b>"+TheOriginalList[randomindex][3]+"</b></a>";
+	html=html+"<li>Instructions for Using AutoTutor: <a href='"+TheOriginalList[randomindex][3]+"' target='new'></a><b>"+TheOriginalList[randomindex][3]+"</b></a>";
 	html=html+"<li>List of your student: <a href='"+TheOriginalList[randomindex][4]+"' target='new'> <b>"+TheOriginalList[randomindex][4]+"</b> </a>"
 	html=html+"<li>URL to login: <b><a  target='_top' href='https://arcweb.us/login/'>https://arcweb.us/login/</a> </b></ul>"; 	
 	
